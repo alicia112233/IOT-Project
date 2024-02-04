@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0E74DE1-82E7-40F9-A51D-225CCA981F84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IOTAssignment</RootNamespace>
+    <AssemblyName>IOTAssignment</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommsUtil">
+      <HintPath>..\..\..\Temp\CommsUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AdminAddStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAddStud.designer.cs">
+      <DependentUpon>AdminAddStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAttendance.designer.cs">
+      <DependentUpon>AdminAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMain.designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSearchStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSearchStud.designer.cs">
+      <DependentUpon>AdminSearchStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewAdm.designer.cs">
+      <DependentUpon>AdminViewAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewStud.designer.cs">
+      <DependentUpon>AdminViewStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssignmentDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdminChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminChangePassword.designer.cs">
+      <DependentUpon>AdminChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResettingPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResettingPassword.designer.cs">
+      <DependentUpon>ResettingPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserChangePassword.Designer.cs">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataComm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataComm.designer.cs">
+      <DependentUpon>DataComm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resetPassword.Designer.cs">
+      <DependentUpon>resetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendCode.Designer.cs">
+      <DependentUpon>sendCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudAttendance.Designer.cs">
+      <DependentUpon>StudAttendance.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAddStud.resx">
+      <DependentUpon>AdminAddStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAttendance.resx">
+      <DependentUpon>AdminAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSearchStud.resx">
+      <DependentUpon>AdminSearchStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewAdm.resx">
+      <DependentUpon>AdminViewAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewStud.resx">
+      <DependentUpon>AdminViewStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminChangePassword.resx">
+      <DependentUpon>AdminChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResettingPassword.resx">
+      <DependentUpon>ResettingPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserChangePassword.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataComm.resx">
+      <DependentUpon>DataComm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="resetPassword.resx">
+      <DependentUpon>resetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendCode.resx">
+      <DependentUpon>sendCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudAttendance.resx">
+      <DependentUpon>StudAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AssignmentDBDataSet.xsc">
+      <DependentUpon>AssignmentDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssignmentDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssignmentDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssignmentDBDataSet.xss">
+      <DependentUpon>AssignmentDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssignmentDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AssignmentDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AssignmentDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
