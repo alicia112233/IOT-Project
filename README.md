@@ -31,7 +31,9 @@ Searching for a student:
 <img width="546" alt="Screenshot_20230118_053256" src="https://github.com/user-attachments/assets/968dc85c-0088-4cd4-83f1-f40e0dc79da1">
 
 Changing Password Function:
+<br>
 <img width="356" alt="Screenshot_20230118_053420" src="https://github.com/user-attachments/assets/dabe8727-13d5-4a7d-a620-efa7a25a2927">
 
 Forget Password Function:
+<br>
 <img width="316" alt="Screenshot_20230118_053729" src="https://github.com/user-attachments/assets/7ddc3e93-c959-47cb-8493-84ee49de8cd6">
